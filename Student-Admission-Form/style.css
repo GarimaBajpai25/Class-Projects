@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background: #111827;
+    color: #1f2937;
+    padding: 40px 20px;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.header {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+
+.header p {
+    color: #d1d5db;
+    font-size: 15px;
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+form {
+    background: #f9fafb;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ================================
+   SECTION HEADING
+================================ */
+
+form h2,
+.students-section h2 {
+    font-size: 21px;
+    color: #111827;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+
+form h2:not(:first-child) {
+    margin-top: 35px;
+}
+
+
+/* ================================
+   FORM ROW
+================================ */
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+/* ================================
+   FORM GROUP
+================================ */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #374151;
+}
+
+
+/* ================================
+   INPUTS
+================================ */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: white;
+    color: #111827;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+}
+
+
+/* ================================
+   TEXTAREA
+================================ */
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+
+/* ================================
+   RADIO
+================================ */
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    margin: 0;
+    color: #4b5563;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #7c3aed;
+}
+
+
+/* ================================
+   FILE INPUT
+================================ */
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+}
+
+
+/* ================================
+   ERROR MESSAGE
+================================ */
+
+small {
+    display: block;
+    margin-top: 6px;
+    color: #dc2626;
+    min-height: 17px;
+    font-size: 13px;
+}
+
+
+/* ================================
+   TERMS
+================================ */
+
+.terms {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+
+.terms label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #4b5563;
+    font-size: 14px;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+
+.reset-button,
+.submit-button {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.reset-button {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+
+.reset-button:hover {
+    background: #d1d5db;
+}
+
+
+.submit-button {
+    background: #7c3aed;
+    color: white;
+}
+
+
+.submit-button:hover {
+    background: #6d28d9;
+    transform: translateY(-1px);
+}
+
+
+/* ================================
+   STUDENTS SECTION
+================================ */
+
+.students-section {
+    margin-top: 40px;
+}
+
+
+.students-section h2 {
+    color: white;
+    border-color: #374151;
+}
+
+
+/* ================================
+   STUDENT CONTAINER
+================================ */
+
+#studentContainer {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(300px, 1fr)
+    );
+    gap: 20px;
+}
+
+
+/* ================================
+   STUDENT CARD
+================================ */
+
+.student-card {
+    background: #f9fafb;
+    padding: 25px;
+    border-radius: 14px;
+    border-top: 5px solid #7c3aed;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+.student-card h3 {
+    color: #111827;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 21px;
+}
+
+
+.student-card p {
+    margin: 8px 0;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+
+.student-card strong {
+    color: #1f2937;
+}
+
+
+/* ================================
+   STUDENT PHOTO
+================================ */
+
+.student-photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+    border: 4px solid #ede9fe;
+}
+
+
+/* ================================
+   DELETE BUTTON
+================================ */
+
+.delete-button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background: #fee2e2;
+    color: #dc2626;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.delete-button:hover {
+    background: #dc2626;
+    color: white;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 25px 12px;
+    }
+
+
+    form {
+        padding: 22px;
+    }
+
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+
+    .radio-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+
+    .button-group {
+        flex-direction: column;
+    }
+
+
+    #studentContainer {
+        grid-template-columns: 1fr;
+    }
+
+}
