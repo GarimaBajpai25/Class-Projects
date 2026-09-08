@@ -1,0 +1,16 @@
+@media (max-width:767px){
+    .header ul{
+        display: none;
+    }
+
+    .header-btn{
+        display: none;
+    }
+
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+}
+
